@@ -9,6 +9,7 @@ from keras import optimizers
 from keras.layers import Convolution2D, MaxPooling2D, Conv2D, GlobalAveragePooling2D 
 from keras.layers import Activation, Dropout, Flatten, Dense, Dropout
 from keras import backend as K
+
 from keras.models import load_model
 from keras.preprocessing import image
 from keras import applications
@@ -16,12 +17,14 @@ from keras.models import Model
 from keras.utils.data_utils import get_file
 CUDA_VISIBLE_DEVICES = "3"
 
-
+print "CUDA_VISIBLE_DEVICES"+CUDA_VISIBLE_DEVICES
 os.environ["CUDA_VISIBLE_DEVICES"] = CUDA_VISIBLE_DEVICES
 img_width, img_height = 299, 299   # 模型需要的参数大小
 epochs = 10 # best is 47
 batch_size = 16
 map2filename = lambda name: str( name[name.index("/")+1:name.index(".")] )
+
+
 
 
 img_dir = "./imgs/" 
