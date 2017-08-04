@@ -4,3 +4,5 @@
 
 
 3、运行wylXception1~n.py
+
+4、注意修改CUDA_VISIBLE_DEVICES 指定GPU编号
