@@ -16,6 +16,7 @@ from keras.models import Model
 from keras.utils.data_utils import get_file
 CUDA_VISIBLE_DEVICES = "3"
 
+print CUDA_VISIBLE_DEVICES
 os.environ["CUDA_VISIBLE_DEVICES"] = CUDA_VISIBLE_DEVICES
 img_width, img_height = 299, 299   # 模型需要的参数大小
 epochs = 10 # best is 47
