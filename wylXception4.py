@@ -16,8 +16,7 @@ from keras.models import Model
 from keras.utils.data_utils import get_file
 CUDA_VISIBLE_DEVICES = "3"
 
-
-
+print CUDA_VISIBLE_DEVICES
 print "CUDA_VISIBLE_DEVICES = "+CUDA_VISIBLE_DEVICES
 print "CUDA_VISIBLE_DEVICES = "+CUDA_VISIBLE_DEVICES
 os.environ["CUDA_VISIBLE_DEVICES"] = CUDA_VISIBLE_DEVICES
